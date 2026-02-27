@@ -546,8 +546,10 @@ function App() {
     return (
       <div className="app-container">
         <Logo />
-        <div className="progress-container"><div className="progress-bar" style={{ width: '100%' }}></div></div>
         <div className="glass-card">
+          <div className="progress-container" style={{ marginBottom: '2rem' }}>
+            <div className="progress-bar" style={{ width: '100%' }}></div>
+          </div>
           <div style={{ fontSize: '4rem', marginBottom: '1.5rem', color: '#ffd700' }}>✨</div>
           <h1 style={{ color: '#ffd700', marginBottom: '1rem' }}>¡Muchas gracias!</h1>
           <p style={{ marginBottom: '2rem' }}>Tus respuestas han sido recibidas. Nos ayudarán a crear el bar perfecto para ti.</p>
@@ -564,8 +566,11 @@ function App() {
             <img
               src="/Logo-zotek_animado.svg"
               alt="Zotek Soluciones IA"
-              style={{ height: '120px', filter: 'drop-shadow(0 0 12px rgba(0, 210, 255, 0.6))' }}
+              style={{ height: '80px' }}
             />
+            <p style={{ fontSize: '0.85rem', color: 'var(--sky-blue)', opacity: 0.8, margin: 0 }}>
+              contacto: zoteksolucionesia@gmail.com
+            </p>
           </div>
         </div>
       </div>
