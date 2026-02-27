@@ -1,0 +1,85 @@
+{
+    "encuesta_bar": {
+        "configuracion_general": {
+            "nombre": "Encuesta: Proyecto Bar Colima",
+            "descripcion": "Definición de concepto de bar",
+            "todas_obligatorias": true
+        },
+        "preguntas": [
+            {
+                "id": 1,
+                "pregunta": "¿Qué rango de edad tienes?",
+                "tipo": "radio",
+                "descripcion": "Opción única (círculos)",
+                "opciones": [
+                    "18 - 24",
+                    "25 - 34",
+                    "35 - 44",
+                    "45 - 54",
+                    "55 o más"
+                ]
+            },
+            {
+                "id": 2,
+                "pregunta": "¿Con qué frecuencia visitas bares?",
+                "tipo": "checkbox",
+                "descripcion": "Selección múltiple (casillas)",
+                "opciones": [
+                    "Varias veces por semana",
+                    "Una vez por semana",
+                    "Cada quince días",
+                    "Una vez al mes"
+                ]
+            },
+            {
+                "id": 3,
+                "pregunta": "¿Qué tipo de música prefieres en un bar?",
+                "tipo": "checkbox",
+                "descripcion": "Selección múltiple (casillas)",
+                "opciones": [
+                    "Rock clásico",
+                    "Jazz / Blues",
+                    "Pop / Actual",
+                    "Música electrónica / Lounge"
+                ]
+            },
+            {
+                "id": 4,
+                "pregunta": "¿Qué es lo que más valoras en un bar?",
+                "tipo": "checkbox",
+                "descripcion": "Selección múltiple (casillas)",
+                "opciones": [
+                    "La variedad de bebidas",
+                    "El ambiente y decoración",
+                    "El servicio al cliente",
+                    "Los precios competitivos"
+                ]
+            },
+            {
+                "id": 5,
+                "pregunta": "¿Qué horario prefieres para visitar un bar?",
+                "tipo": "checkbox",
+                "descripcion": "Selección múltiple (casillas)",
+                "opciones": [
+                    "After-office (6 PM - 9 PM)",
+                    "Noche (9 PM - 12 AM)",
+                    "Madrugada (12 AM en adelante)"
+                ]
+            },
+            {
+                "id": 6,
+                "pregunta": "¿En qué zona de la ciudad te gustaría el bar?",
+                "tipo": "text_short",
+                "descripcion": "Respuesta corta",
+                "placeholder": "Ej. Centro, Norte, etc."
+            },
+            {
+                "id": 7,
+                "pregunta": "Tu bar ideal en una palabra",
+                "tipo": "text_short",
+                "descripcion": "Respuesta corta",
+                "placeholder": "Ej. Elegante, Rústico, etc."
+            }
+        ]
+    }
+}

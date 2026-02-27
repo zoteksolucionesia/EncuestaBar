@@ -1,0 +1,60 @@
+<svg width="400" height="80" viewBox="0 0 400 80" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .text {
+      fill: #004080; /* Azul rey */
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-size: 36px;
+      font-weight: 500;
+      dominant-baseline: middle;
+      text-anchor: start;
+    }
+    .dot {
+      fill: #ff0066; /* Rosa neón */
+    }
+
+    /* Animación para el círculo principal */
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.1); }
+      100% { transform: scale(1); }
+    }
+
+    .circle-main {
+      animation: pulse 2s infinite ease-in-out;
+    }
+
+    /* Animación para los puntos */
+    @keyframes rotateDots {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    .dot-group {
+      animation: rotateDots 5s linear infinite;
+    }
+  </style>
+
+  <!-- Texto -->
+  <text x="0" y="40" class="text">ZØtek</text> <!-- Nota: Uso del carácter Ø -->
+  <text x="120" y="40" class="text">Soluciones</text>
+
+  <!-- Icono IA / Chip tecnológico -->
+  <g transform="translate(320, 30)">
+    <!-- Círculo principal -->
+    <circle r="10" cx="0" cy="0" class="dot circle-main"/>
+    
+    <!-- Grupo de puntos rotatorios -->
+    <g class="dot-group">
+      <circle r="3" cx="-12" cy="-12" class="dot" fill-opacity="0.6"/>
+      <circle r="3" cx="12" cy="-12" class="dot" fill-opacity="0.6"/>
+      <circle r="3" cx="-12" cy="12" class="dot" fill-opacity="0.6"/>
+      <circle r="3" cx="12" cy="12" class="dot" fill-opacity="0.6"/>
+    </g>
+
+    <!-- Líneas conectando puntos -->
+    <line x1="-12" y1="-12" x2="0" y2="0" stroke="#004080" stroke-width="1"/>
+    <line x1="12" y1="-12" x2="0" y2="0" stroke="#004080" stroke-width="1"/>
+    <line x1="-12" y1="12" x2="0" y2="0" stroke="#004080" stroke-width="1"/>
+    <line x1="12" y1="12" x2="0" y2="0" stroke="#004080" stroke-width="1"/>
+  </g>
+</svg>

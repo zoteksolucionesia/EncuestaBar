@@ -1,0 +1,21 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Reglas de seguridad básicas para EncuestaBar
+    // ATENCIÓN: Esta app actualmente no usa Firebase Auth para el panel de administración.
+    // Por lo tanto, el acceso de lectura/escritura es público para que el panel funcione.
+    // Para un entorno de producción estricto, se DEBE implementar Firebase Auth y
+    // restringir el acceso a la colección 'preguntas' y lectura de 'respuestas' solo a admins.
+    
+    match /preguntas/{preguntaId} {
+      allow read: if true;
+      allow write: if true; // Necesario para el admin panel sin auth
+    }
+    
+    match /respuestas/{respuestaId} {
+      allow read: if true; // Necesario para el admin panel sin auth
+      allow create: if true;
+      allow update, delete: if true; // Necesario para el admin panel sin auth
+    }
+  }
+}
