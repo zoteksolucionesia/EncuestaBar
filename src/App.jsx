@@ -559,12 +559,12 @@ function App() {
 
           <div style={{ marginTop: '1rem', paddingTop: '2rem', borderTop: '1px solid rgba(255,255,255,0.1)', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '1rem' }}>
             <p style={{ fontSize: '0.85rem', color: 'var(--sky-blue)', opacity: 0.8, margin: 0 }}>
-              Encuesta desarrollada por Zotek Soluciones IA / zoteksolucionesia@gmail.com
+              Encuesta desarrollada por
             </p>
             <img
               src="/Logo-zotek_animado.svg"
               alt="Zotek Soluciones IA"
-              style={{ height: '80px', filter: 'drop-shadow(0 0 12px rgba(0, 210, 255, 0.6))' }}
+              style={{ height: '120px', filter: 'drop-shadow(0 0 12px rgba(0, 210, 255, 0.6))' }}
             />
           </div>
         </div>
