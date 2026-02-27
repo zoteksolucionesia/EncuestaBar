@@ -555,7 +555,18 @@ function App() {
             <p>✓ Preferencias musicales registradas</p>
             <p>✓ Ambiente y horario capturados</p>
           </div>
-          <button className="btn-premium" style={{ marginTop: '2rem' }} onClick={() => window.location.reload()}>Finalizar</button>
+          <button className="btn-premium" style={{ marginTop: '2rem', marginBottom: '2rem' }} onClick={() => window.location.reload()}>Finalizar</button>
+
+          <div style={{ marginTop: '1rem', paddingTop: '2rem', borderTop: '1px solid rgba(255,255,255,0.1)', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '1rem' }}>
+            <p style={{ fontSize: '0.85rem', color: 'var(--sky-blue)', opacity: 0.8, margin: 0 }}>
+              Encuesta desarrollada por Zotek Soluciones IA / zoteksolucionesia@gmail.com
+            </p>
+            <img
+              src="/Logo-zotek_animado.svg"
+              alt="Zotek Soluciones IA"
+              style={{ height: '80px', filter: 'drop-shadow(0 0 12px rgba(0, 210, 255, 0.6))' }}
+            />
+          </div>
         </div>
       </div>
     )
